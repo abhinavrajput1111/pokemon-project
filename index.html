@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="container">
+        <h1 class="text-center mt-5 text-4xl text-green-600">Pokemon</h1>
+
+        <div id="form" class="flex justify-center mt-10 flex-col items-center">
+          <form action="" class="flex mx-5">
+            <select name="" id="select-pokemon" class="border">
+              <option value="types" disabled selected>Type</option>
+              <option value="grass">Grass</option>
+              <option value="fire">Fire</option>
+              <option value="water">Water</option>
+              <option value="electric">Electric</option>
+              <option value="poison">Poison</option>
+              <option value="flying">Flying</option>
+              <option value="bug">Bug</option>
+              <option value="ice">Ice</option>
+              <option value="flying">Flying</option>
+              <option value="normal">Normal</option>
+              <option value="fairy">Fairy</option>
+              <option value="dragon">Dragon</option>
+              <option value="ghost">Ghost</option>
+              <option value="rock">Rock</option>
+              <option value="fighting">Fighting</option>
+              <option value="ground">Ground</option>
+            </select>
+            <button id="filter" class="filter mx-5 px-3 border">
+              Filter By Type
+            </button>
+            <button id="reset" class="reset mx-5 px-3 border">Reset</button>
+          </form>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="search pl-5 pr-5 mt-5 my-2 border"
+            placeholder="Enter Pokemon Name"
+          />
+        </div>
+
+        <div id="output" class="output"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
