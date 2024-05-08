@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div id="wrapper">
+    <div id="wrapper" class="w-full h-full wrapper">
       <div id="container">
-        <h1 class="text-center mt-5 text-4xl text-green-600">Pokemon</h1>
+        <h1
+          class="heading-poke text-center font-bold pt-5 text-5xl drop-shadow-md text-gray-50"
+        >
+          Pokemon - PRO
+        </h1>
 
         <div id="form" class="flex justify-center mt-10 flex-col items-center">
           <form action="" class="flex mx-5">
-            <select name="" id="select-pokemon" class="border">
-              <option value="types" disabled selected>Type</option>
+            <select
+              name=""
+              id="select-pokemon"
+              class="border rounded-lg px-4 text-center"
+            >
+              <option value="types" disabled>Type</option>
               <option value="grass">Grass</option>
               <option value="fire">Fire</option>
               <option value="water">Water</option>
@@ -33,16 +47,24 @@
               <option value="fighting">Fighting</option>
               <option value="ground">Ground</option>
             </select>
-            <button id="filter" class="filter mx-5 px-3 border">
+            <button
+              id="filter"
+              class="filter mx-5 px-3 border bg-gray-50 rounded-lg"
+            >
               Filter By Type
             </button>
-            <button id="reset" class="reset mx-5 px-3 border">Reset</button>
+            <button
+              id="reset"
+              class="reset ml2 px-3 border bg-gray-50 rounded-lg"
+            >
+              Reset
+            </button>
           </form>
           <input
             type="text"
             name="search"
             id="search"
-            class="search pl-5 pr-5 mt-5 my-2 border"
+            class="search pl-5 pr-5 mt-5 my-2 border rounded-lg"
             placeholder="Enter Pokemon Name"
           />
         </div>
